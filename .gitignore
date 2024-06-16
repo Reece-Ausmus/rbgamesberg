@@ -37,3 +37,6 @@ next-env.d.ts
 
 # python virtual environment
 backend/venv/
+
+# python cache
+__pycache__/
