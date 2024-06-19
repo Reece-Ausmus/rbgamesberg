@@ -31,3 +31,30 @@ body {
     text-wrap: balance;
   }
 }
+
+.home_background {
+  --s: 70px; /* control the size*/
+  --c2: #4CE4E4;
+  --c1: #000000;
+  
+  background:
+    conic-gradient(at 9% 9%,var(--c1) 75%,#0000 0),
+    var(--c2);
+  background-size: var(--s) var(--s);
+
+  width: calc(100vw - 16px); /* - 16px because whole screen has padding of 2 (p-2 = 8px) */
+  height: calc(100vh - 16px);
+  overflow: hidden;
+  /* animation: moveBackground 100s linear infinite; */
+  z-index: 1;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+

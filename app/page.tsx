@@ -4,11 +4,13 @@ import Banner from './Banner';
 
 export default function Home() {
   return (
-    <div className='w-screen h-screen bg-gray-300'>
-      <Banner />
-      <div className='p-4 text-scheme1d'>
-        games here
+    <body style={{padding: '8px'}}>
+      <div className='home_background border-2 border-s2a'>
+        <Banner />
+        <div>
+          games here
+        </div>
       </div>
-    </div>
+    </body>
   );
 }
