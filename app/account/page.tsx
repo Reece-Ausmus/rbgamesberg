@@ -1,4 +1,4 @@
-// the login page
+// the account page
 
 import React from 'react';
 import '../globals.css';
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <body>
       <div>
-        LOGIN PAGE !!!!
+        ACCOUNT PAGE !!!!
       </div>
     </body>
   );
