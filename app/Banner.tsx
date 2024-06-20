@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Button from '@mui/material/Button';
 
 const Banner = () => {
@@ -12,9 +13,15 @@ const Banner = () => {
         </div>
         {/* link buttons */}
         <div className=" h-full ml-auto p-2">
-          <Button variant="contained" size="large" className='bg-s2a mx-1'>settings</Button>
-          <Button variant="contained" size="large" className='bg-s2a mx-1'>account</Button>
-          <Button variant="contained" size="large" className='bg-s2a mx-1'>login</Button>
+          <Link href="/settings">
+            <Button variant="contained" size="large" className='bg-s2a mx-1'>settings</Button>
+          </Link>
+          <Link href="/account">
+            <Button variant="contained" size="large" className='bg-s2a mx-1'>account</Button>
+          </Link>
+          <Link href="/login">
+            <Button variant="contained" size="large" className='bg-s2a mx-1'>login</Button>
+          </Link>
         </div>
       </div>
     </div>
